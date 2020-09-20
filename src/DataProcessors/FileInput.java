@@ -29,6 +29,7 @@ public class FileInput {
     /**This method was used early on for testing purposes so that I
      *  could properly test and validate file input and the counting method
      *  It is no longer useful but was left in for future testing purposes
+     *  s
      * @return
      */
      public ArrayList<String> inputfile (){

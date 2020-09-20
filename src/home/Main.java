@@ -27,7 +27,7 @@ public class Main {
         map = checker.MapSorter(map);
 
         //printing out the final sorted list
-        map.forEach((k,v)->System.out.println("Key: " + k + "Value: " + v));
+        map.forEach((k,v)->System.out.println(k + " Appears " + v +" times"));
         System.out.println("printing complete");
     }
 }

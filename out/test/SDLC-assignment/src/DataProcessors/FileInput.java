@@ -13,7 +13,7 @@ public class FileInput {
 
 
     String html = "https://www.gutenberg.org/files/1065/1065-h/1065-h.htm";
-    //TODO create a way to input the correct text from the website file given
+
 
     private String URL = "C:/Users/joebo/Documents/school/CEN-3024C/Java Projects/SDLC-assignment/src/Raven.txt";
 
@@ -26,6 +26,12 @@ public class FileInput {
     }
 
 
+    /**This method was used early on for testing purposes so that I
+     *  could properly test and validate file input and the counting method
+     *  It is no longer useful but was left in for future testing purposes
+     *  s
+     * @return
+     */
      public ArrayList<String> inputfile (){
         //creating the arraylist to store very word parsed from the file in
         ArrayList<String> list = new ArrayList<String>();
@@ -99,8 +105,8 @@ public class FileInput {
 
 
 
-
-            System.out.println("this is for breakline");
+            //the following line was used for testing and was left in case further testing was needed
+           // System.out.println("this is for breakline");
 
 
 
@@ -114,7 +120,9 @@ public class FileInput {
             System.out.println("error in jsoup" + e.getLocalizedMessage());
         }
 
-        return null;
+         //this was placed in case something went wrong during try catch the method would return null
+         // this also allows for further error checking
+         return null;
 
      }
 
