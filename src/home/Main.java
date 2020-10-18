@@ -1,33 +1,24 @@
 package home;
 
-import DataProcessors.FileInput;
-import DataProcessors.ListAnalyzer;
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-public class Main {
+public class Main extends Application {
     public static void main(String[] args) {
+        launch(args);
 
-
-
-        FileInput getfile = new FileInput();
-
-
-
-       ArrayList<String> list =   getfile.InputFromWeb();
-
-        ListAnalyzer checker = new ListAnalyzer();
-
-        HashMap<String, Integer> map = checker.listanalyzer(list);
-        //System.out.println("this is for debugging");
-
-        map = checker.MapSorter(map);
-
-        //printing out the final sorted list
-        map.forEach((k,v)->System.out.println(k + " Appears " + v +" times"));
-        System.out.println("printing complete");
     }
+
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("window.fxml"));
+        primaryStage.setTitle("Hello World");
+        primaryStage.setScene(new Scene(root, 676, 465));
+        primaryStage.show();
+    }
+
 }
