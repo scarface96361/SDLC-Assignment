@@ -40,9 +40,9 @@ public class DatabaseTool {
 
             stmt.executeUpdate(sql);
 
-            sql = "CREATE TABLE WORDS" +
-                    "(word STRING ," +
-                    "wordcount INTEGER)";
+            sql = "CREATE TABLE WORDS_Table" +
+                    "( word STRING ," +
+                    " wordcount INTEGER)";
 
             stmt.executeUpdate(sql);
 
@@ -77,7 +77,7 @@ public class DatabaseTool {
             for(Map.Entry<String, Integer> entry : wordcount.entrySet() ){
                 String k = entry.getKey();
                 Integer v = entry.getValue();
-                sql ="Insert into words_table values ('"+ k +"' , "+ v + ") ";
+                sql ="Insert into words_table values ( '"+ k +"' , "+ v + ") ";
                 stmt.executeUpdate(sql);
             }
 
