@@ -41,6 +41,12 @@ public class ListAnalyzer {
 
     }
 
+    /**The mapsorter method takes a hashmap input and sorts it by the values not the keys.
+     *
+     * @param toSort
+     * @return
+     */
+
     public HashMap<String, Integer> MapSorter(HashMap<String, Integer> toSort){
 
         //creating an arraylist to store the hashmap entries

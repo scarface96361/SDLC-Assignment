@@ -17,5 +17,6 @@
    <children>
       <Button fx:id="startCalculation" alignment="CENTER" layoutX="50.0" mnemonicParsing="false" onAction="#runCounter" text="Count &quot;The Raven&quot;" translateX="110.0" />
       <TextArea fx:id="textOutput" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
+      <Button fx:id="DatabaseButton" layoutX="50.0" mnemonicParsing="false" onAction="#readDB" text="Read from Database" translateX="110.0" translateY="40.0" />
    </children>
 </GridPane>
